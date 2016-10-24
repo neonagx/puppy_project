@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'puppies#index'
 
+  # resources :puppies
+  
   get 'puppies/' => 'puppies#index'
   post 'puppies/' => 'puppies#create'
   get 'puppies/new' => 'puppies#new', as: :new_puppy
